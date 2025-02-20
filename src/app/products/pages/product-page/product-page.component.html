@@ -12,7 +12,12 @@
         </div>
 
         <div class="col-auto">
-            <span>Algo de información</span>
+            <span
+                customLabel
+                [color]="color"
+                [errors]="myForm.get('name')?.errors"
+                >Hola mundo</span
+            >
         </div>
 
         <div class="row">
